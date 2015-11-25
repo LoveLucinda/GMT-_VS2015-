@@ -20,6 +20,7 @@ REM 设置坐标轴边框只有左，下有标注 WSen
 gmtset BASEMAP_AXES WSen
 REM 图形文件格式
 gmtset PSIMAGE_FORMAT hex
+cls
 rem -----------------------------------------------------针对区域主图的设置---------------------------------------------------------------
 set ParentPath=H:\Study\1-博士课题\2_西南印度洋数据\0-大区域-GMT底图\
 set RANGE=-20/80/-65/-20
@@ -74,3 +75,4 @@ gmt psxy %ParentPath%研究区域范围.txt -R -J -W0.5p,blue -L -A -O -K>> %outpsfile
 rem ----------------------------------添加大区域缩略图（这个务必放在最后）--------------------------------------------------------------------
 del gmt.conf *.history 
 del tmp
+rem exit
