@@ -75,4 +75,4 @@ gmt psxy %ParentPath%研究区域范围.txt -R -J -W0.5p,blue -L -A -O -K>> %outpsfile
 rem ----------------------------------添加大区域缩略图（这个务必放在最后）--------------------------------------------------------------------
 del gmt.conf *.history 
 del tmp
-rem exit
+exit
